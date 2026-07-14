@@ -1,4 +1,4 @@
-package com.punya.demo;
+package com.punya.demo.Java;
 
 class P{
     void m1(){}

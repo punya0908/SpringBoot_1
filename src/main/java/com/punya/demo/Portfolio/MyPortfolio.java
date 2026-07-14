@@ -14,7 +14,7 @@ public class MyPortfolio {
     }
 
     @GetMapping("/Skills")
-    public String skills(){
+    public String getSkills(){
         return """
                 <h1>Skills</h1>
                 <ul>
@@ -24,7 +24,7 @@ public class MyPortfolio {
     }
 
     @GetMapping("/edu")
-    public String edu(){
+    public String getEducation(){
         return """
                 <h1>Edu</h1>
                 <p>MGN public school</p>
@@ -32,13 +32,21 @@ public class MyPortfolio {
     }
 
     @GetMapping("/projects")
-    public String projects(){
+    public String getProjects(){
         return """
                 <h1>Projects</h1>
                 <ul>
                 <li>OrderFlow</li>
                 <li>IntelliHR</li>
                 </ul>
+        """;
+    }
+
+    @GetMapping("/contact")
+    public String getContact(){
+        return """
+                <h1>Contact</h1>
+                <p>7355543230</p>
         """;
     }
 }
