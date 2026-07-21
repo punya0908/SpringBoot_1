@@ -1,9 +1,9 @@
-package com.punya.demo.StudentServer;
+package com.punya.demo.StudentServer.Repository;
 
+import com.punya.demo.StudentServer.Entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-@Repository
+//@Repository
 public interface StudentRepository extends JpaRepository<Student, Integer> {
 
 }
